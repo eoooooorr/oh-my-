@@ -215,7 +215,7 @@ function saveRank() {
 }
 
 function foodLight() {
-    (food.color === 'yellow') ? food.setColor('black'): food.setColor('yellow');
+    (food.color === 'red') ? food.setColor('black'): food.setColor('red');
 }
 
 function eatFood() {
