@@ -178,7 +178,7 @@ function snakeMove() {
 //判斷死亡條件1:碰觸邊界
 function checkBorder() {
     if (snake.x >= size || snake.x < 0 || snake.y >= size || snake.y < 0) {
-        alert('碰觸邊界');
+        alert('碰!');
         snake.move = false;
         saveRank();
     }
@@ -189,7 +189,7 @@ function checkTouchBody() {
     if (snake.move == true) {
         for (var i = 0; i < snakeBody.length; i++) {
             if (snakeBody[i] == box[snake.y][snake.x]) {
-                alert('碰自己');
+                alert('自摸了');
                 snake.move = false;
             }
         }
