@@ -34,7 +34,7 @@ var levelColor = ['#FFDCDC', '#FFC1C1', '#FFAFAF', '#FF9696', '#FF7575', '#FF545
 var food = {
     x: Math.floor(Math.random() * size),
     y: Math.floor(Math.random() * size),
-    color: 'yellow',
+    color: 'red',
     setColor: function (color) {
         box[this.y][this.x].className = color;
         this.color = color;
